@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F8F4"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Título -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F1F8F4"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/txtTituloQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="QUIZ DE TRÂNSITO"
+            android:textColor="#222222"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Número da questão -->
+        <TextView
+            android:id="@+id/txtQuestao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Questão 2 de 5"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <!-- Imagem da placa -->
+        <ImageView
+            android:id="@+id/imgPlaca"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="Imagem da placa"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <!-- Pergunta -->
+        <TextView
+            android:id="@+id/txtPergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="Qual o significado desta placa?"
+            android:textColor="#222222"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Grupo das alternativas -->
+        <RadioGroup
+            android:id="@+id/radioGroupAlternativas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioA"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:text="Parada obrigatória"
+                android:textColor="#222222"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioB"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:text="Estreitamento de pista"
+                android:textColor="#222222"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioC"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:text="Rotatória à frente"
+                android:textColor="#222222"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioD"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:text="Redução de largura"
+                android:textColor="#222222"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+        <!-- Botão próxima -->
+        <Button
+            android:id="@+id/btnProxima"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#757575"
+            android:text="PRÓXIMA PERGUNTA"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
