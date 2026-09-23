@@ -47,7 +47,7 @@
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
             android:contentDescription="Imagem da placa"
-            android:src="@drawable/ic_launcher_foreground" />
+            android:src="@drawable/curva" />
 
         <!-- Pergunta -->
         <TextView
@@ -113,6 +113,7 @@
             android:layout_height="55dp"
             android:layout_marginTop="15dp"
             android:backgroundTint="#757575"
+            android:enabled="false"
             android:text="PRÓXIMA PERGUNTA"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
